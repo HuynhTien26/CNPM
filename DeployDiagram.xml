@@ -1,0 +1,99 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0">
+  <diagram id="deployment_diagram_am_thuc_spaced" name="Deployment Diagram - Am Thuc Viet Nam">
+    <mxGraphModel dx="2022" dy="1088" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="node_client" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;align=center;verticalAlign=top;spacingTop=10;fontSize=13;" value="&lt;b&gt;&amp;laquo;device&amp;raquo;&lt;br&gt;User Client Device&lt;/b&gt;" vertex="1">
+          <mxGeometry height="430" width="280" x="60" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_mobile_app" parent="1" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;b&gt;&amp;laquo;artifact&amp;raquo;&lt;br&gt;Mobile Application&lt;/b&gt;&lt;br&gt;(Flutter / React Native)" vertex="1">
+          <mxGeometry height="60" width="210" x="95" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_gps_module" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;GPS / Geolocation Sensor&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="210" x="95" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_audio_player" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Audio Player &amp;amp; TTS Client&lt;/b&gt;&lt;br&gt;(Handles Audio Streams)" vertex="1">
+          <mxGeometry height="55" width="210" x="95" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_diary_ui" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Food Diary &amp;amp; Map UI&lt;/b&gt;&lt;br&gt;(Interactive Cards &amp;amp; Customizer)" vertex="1">
+          <mxGeometry height="55" width="210" x="95" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_local_cache" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Local Storage / Cache&lt;/b&gt;&lt;br&gt;(Draft Diary &amp;amp; Preferences)" vertex="1">
+          <mxGeometry height="45" width="210" x="95" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="node_gateway" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=center;verticalAlign=top;spacingTop=10;fontSize=13;" value="&lt;b&gt;&amp;laquo;executionEnvironment&amp;raquo;&lt;br&gt;Reverse Proxy &amp;amp; API Gateway&lt;/b&gt;&lt;br&gt;(NGINX / Kong / AWS ALB)" vertex="1">
+          <mxGeometry height="260" width="240" x="540" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_auth" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#d6b656;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Auth &amp;amp; Rate Limiter&lt;/b&gt;&lt;br&gt;(JWT Validation, SSL/TLS)" vertex="1">
+          <mxGeometry height="60" width="190" x="565" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="comp_routing" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#d6b656;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;API Router &amp;amp; Load Balancer&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="190" x="565" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="node_app_server" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;align=center;verticalAlign=top;spacingTop=10;fontSize=13;" value="&lt;b&gt;&amp;laquo;executionEnvironment&amp;raquo;&lt;br&gt;Application Cluster (Docker / Kubernetes)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="590" width="470" x="980" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="serv_region_gps" parent="1" style="html=1;whiteSpace=wrap;align=left;spacingLeft=15;fillColor=#ffffff;strokeColor=#9673a6;" value="&lt;b&gt;Module 1 &amp;amp; 3: Region &amp;amp; Location Service&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Reverse Geocoding &amp;amp; GPS Fallback&lt;br&gt;• Regional Specialty Recommendation&lt;br&gt;• Nearby Restaurant Ranking (Distance/Rating)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="410" x="1010" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="serv_dish_explore" parent="1" style="html=1;whiteSpace=wrap;align=left;spacingLeft=15;fillColor=#ffffff;strokeColor=#9673a6;" value="&lt;b&gt;Module 2: Dish Discovery &amp;amp; Smart Alert Service&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Multi-dimensional Tagging (Khô, nước, vị cay/mặn/ngọt...)&lt;br&gt;• Ingredient Matching &amp;amp; User Health Profile Matching&lt;br&gt;• Smart Alerting (Cảnh báo dị ứng thực phẩm)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="410" x="1010" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="serv_diary_community" parent="1" style="html=1;whiteSpace=wrap;align=left;spacingLeft=15;fillColor=#ffffff;strokeColor=#9673a6;" value="&lt;b&gt;Module 4: Food Diary &amp;amp; Community Service&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Nhật ký ẩm thực cá nhân hóa (Timeline, Sticker, Images)&lt;br&gt;• Chia sẻ lịch trình ăn uống ra cộng đồng&lt;br&gt;• Tính năng Lưu/Clone lịch trình người dùng khác&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="410" x="1010" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="serv_audio_tts" parent="1" style="html=1;whiteSpace=wrap;align=left;spacingLeft=15;fillColor=#ffffff;strokeColor=#9673a6;" value="&lt;b&gt;Audio Streaming &amp;amp; Narration Service&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Audio giới thiệu vùng miền &amp;amp; món ăn (30s lời + 15s nhạc nền)&lt;br&gt;• Text-to-Speech (TTS) đọc Review cảm nhận nhật ký&lt;br&gt;• Stream Audio queue &amp;amp; đa ngôn ngữ&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="410" x="1010" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="serv_ci_cd" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#555555;" value="&lt;i&gt;&amp;laquo;CI/CD Pipeline Managed&amp;raquo; Unit &amp;amp; Integration Tests (API GPS, Audio Streaming fetch/pause)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="30" width="410" x="1010" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="node_db_server" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=center;verticalAlign=top;spacingTop=10;fontSize=13;" value="&lt;b&gt;&amp;laquo;device&amp;raquo;&lt;br&gt;Database &amp;amp; Cache Server&lt;/b&gt;" vertex="1">
+          <mxGeometry height="270" width="370" x="1660" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="db_main" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#82b366;" value="&amp;laquo;database&amp;raquo;&lt;br&gt;&lt;b&gt;RDBMS (PostgreSQL / MySQL)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Vùng miền, Món ăn, Quán ăn, Users, Diary&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="140" x="1695" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="db_spatial_cache" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#82b366;" value="&amp;laquo;database&amp;raquo;&lt;br&gt;&lt;b&gt;Redis &amp;amp; PostGIS&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Spatial Indexes &amp;amp; Nearby Cache&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="140" x="1855" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="db_search" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#82b366;fontSize=11;" value="&amp;laquo;subsystem&amp;raquo; Search &amp;amp; Filter Engine (Elasticsearch)" vertex="1">
+          <mxGeometry height="40" width="300" x="1695" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="node_cloud_ext" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;align=center;verticalAlign=top;spacingTop=10;fontSize=13;" value="&lt;b&gt;&amp;laquo;cloud&amp;raquo;&lt;br&gt;External Services &amp;amp; Cloud Storage&lt;/b&gt;" vertex="1">
+          <mxGeometry height="270" width="370" x="1660" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_s3_cdn" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" value="&lt;b&gt;Object Storage &amp;amp; CDN&lt;/b&gt;&lt;br&gt;(AWS S3 / Cloudflare CDN)&lt;br&gt;&lt;i&gt;Lưu Audio thuyết minh, nhạc nền, hình ảnh món ăn&lt;/i&gt;" vertex="1">
+          <mxGeometry height="55" width="310" x="1690" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_tts_api" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" value="&lt;b&gt;Cloud TTS Engine API&lt;/b&gt;&lt;br&gt;(Google Cloud TTS / Azure Speech)&lt;br&gt;&lt;i&gt;Chuyển Review nhật ký thành Audio&lt;/i&gt;" vertex="1">
+          <mxGeometry height="55" width="310" x="1690" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_maps_api" parent="1" style="html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#d79b00;fontSize=11;" value="&lt;b&gt;Maps &amp;amp; Geocoding Provider API&lt;/b&gt;&lt;br&gt;(Google Maps / Mapbox Geolocation)" vertex="1">
+          <mxGeometry height="45" width="310" x="1690" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="link_client_gw" edge="1" parent="1" source="node_client" style="endArrow=none;html=1;strokeWidth=2;strokeColor=#333333;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="node_gateway" value="&lt;div style=&quot;padding: 2px 6px;&quot;&gt;&amp;laquo;protocol&amp;raquo;&lt;br&gt;&lt;b&gt;HTTPS / WSS / REST&lt;/b&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_gw_app" edge="1" parent="1" source="node_gateway" style="endArrow=none;html=1;strokeWidth=2;strokeColor=#333333;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="node_app_server" value="&lt;div style=&quot;padding: 2px 6px;&quot;&gt;&amp;laquo;protocol&amp;raquo;&lt;br&gt;&lt;b&gt;gRPC / HTTP/2&lt;/b&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_app_db" edge="1" parent="1" source="node_app_server" style="endArrow=none;html=1;strokeWidth=2;strokeColor=#333333;exitX=1;exitY=0.23;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="node_db_server" value="&lt;div style=&quot;padding: 2px 6px;&quot;&gt;&amp;laquo;protocol&amp;raquo;&lt;br&gt;&lt;b&gt;TCP/IP (Port 5432 / 6379)&lt;/b&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_app_ext" edge="1" parent="1" source="node_app_server" style="endArrow=none;html=1;strokeWidth=2;strokeColor=#333333;exitX=1;exitY=0.77;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="node_cloud_ext" value="&lt;div style=&quot;padding: 2px 6px;&quot;&gt;&amp;laquo;protocol&amp;raquo;&lt;br&gt;&lt;b&gt;REST APIs / SDK over TLS&lt;/b&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_cdn_client" edge="1" parent="1" source="node_cloud_ext" style="endArrow=open;html=1;dashed=1;strokeWidth=1.5;strokeColor=#d79b00;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="node_client" value="&amp;laquo;HTTP Live Streaming / Range Request&amp;raquo;&lt;br&gt;&lt;b&gt;Audio &amp;amp; Media CDN Fetch&lt;/b&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1845" y="810" />
+              <mxPoint x="200" y="810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
