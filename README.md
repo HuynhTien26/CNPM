@@ -4,12 +4,9 @@ Hệ thống thuyết minh bảo tàng thông minh đa nền tảng, tích hợp
 ---
 
 ## 🏛️ Tài liệu kiến trúc & Sơ đồ hệ thống (UML Diagrams)
-
-Các sơ đồ phân tích và thiết kế hệ thống được lưu trữ trực tuyến để đảm bảo chất lượng hiển thị gốc. Bấm vào từng liên kết bên dưới để mở sơ đồ trong tab mới:
-
-* 📌 [Sơ đồ ca sử dụng (Use Case Diagram) — *Mô tả các tác nhân (Khách tham quan, Ban quản trị) và tập tính năng hệ thống.*
+* [Use Case Diagram](https://github.com/user-attachments/files/33852087/usecase.pdf) — *Mô tả các tác nhân (Khách tham quan, Ban quản trị) và tập tính năng hệ thống.*
 <details>
-<summary>👉 <b>Nhấn để xem chi tiết danh sách sơ đồ Use Case (19 ảnh)</b></summary>
+<summary><b>Nhấn để xem chi tiết danh sách sơ đồ Use Case (19 ảnh)</b></summary>
 
 <br>
 
@@ -63,9 +60,10 @@ Các sơ đồ phân tích và thiết kế hệ thống được lưu trữ tr�
 <img width="2550" height="3300" alt="Image" src="https://github.com/user-attachments/assets/56c115b5-3aad-463d-a46e-5c67800f2dad" />
 
 </details>
-* 📌 [Sơ đồ hoạt động (Activity Diagram)](https://raw.githubusercontent.com/HuynhTien26/smart-museum-guide/main/docs/diagrams/activity-diagram.png) — *Quy trình quét mã QR, xác thực vé/mã PIN và đồng bộ phát âm thanh theo tọa độ.*
-* 📌 [Sơ đồ thành phần (Component Diagram)](https://raw.githubusercontent.com/HuynhTien26/smart-museum-guide/main/docs/diagrams/component-diagram.png) — *Cấu trúc kết nối giữa Web Client, Mobile App, Shared Packages và Server API.*
-* 📌 [Sơ đồ triển khai (Deployment Diagram)](https://raw.githubusercontent.com/HuynhTien26/smart-museum-guide/main/docs/diagrams/deployment-diagram.png) — *Quy hoạch hạ tầng máy chủ, cơ sở dữ liệu, WebSocket gateway và dịch vụ lưu trữ đa phương tiện.*
+
+* [Activity Diagram](https://raw.githubusercontent.com/HuynhTien26/smart-museum-guide/main/docs/diagrams/activity-diagram.png) — *Quy trình quét mã QR, xác thực vé/mã PIN và đồng bộ phát âm thanh theo tọa độ.*
+* [Component Diagram](https://raw.githubusercontent.com/HuynhTien26/smart-museum-guide/main/docs/diagrams/component-diagram.png) — *Cấu trúc kết nối giữa Web Client, Mobile App, Shared Packages và Server API.*
+* [Deployment Diagram](https://raw.githubusercontent.com/HuynhTien26/smart-museum-guide/main/docs/diagrams/deployment-diagram.png) — *Quy hoạch hạ tầng máy chủ, cơ sở dữ liệu, WebSocket gateway và dịch vụ lưu trữ đa phương tiện.*
 
 ---
 
