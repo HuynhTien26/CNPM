@@ -7,7 +7,7 @@ Hệ thống thuyết minh bảo tàng thông minh đa nền tảng, tích hợp
 
 Các sơ đồ phân tích và thiết kế hệ thống được lưu trữ trực tuyến để đảm bảo chất lượng hiển thị gốc. Bấm vào từng liên kết bên dưới để mở sơ đồ trong tab mới:
 
-* 📌 [Sơ đồ ca sử dụng (Use Case Diagram)](https://github.com/user-attachments/files/33852087/usecase.pdf) — *Mô tả các tác nhân (Khách tham quan, Ban quản trị) và tập tính năng hệ thống.*
+* 📌 [Sơ đồ ca sử dụng (Use Case Diagram) — *Mô tả các tác nhân (Khách tham quan, Ban quản trị) và tập tính năng hệ thống.*
 <details>
 <summary>👉 <b>Nhấn để xem chi tiết danh sách sơ đồ Use Case (19 ảnh)</b></summary>
 
